@@ -240,6 +240,9 @@ a {
       nav .fa-solid{
         display: block;
         font-size: 25px;
+       position: fixed;
+       top:5px;
+       right: 5px;
       }
       nav ul{
         background:#ed0905;
