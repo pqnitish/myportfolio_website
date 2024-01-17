@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+         <a href="#project-sections"><img src="images/logo.png" class="logo" /></a> 
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project-sections">My Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p id="pro">Full Stack Web Developer</p>
+          <h1>Hi, I'm <span>Nitish singh</span> <br />from India</h1>
+        </div>
+      </div>
+    </div>
+    <!----------------about------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/resize image.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Welcome! I'm a React developer dedicated to crafting exceptional
+              user experiences. With a passion for clean and efficient code, I
+              specialize in building dynamic and responsive applications. My
+              expertise in React, state management, and API integration ensures
+              seamless functionality. Explore my portfolio to see projects that
+              showcase my commitment to delivering high-quality results. Let's
+              connect and discuss how we can collaborate to bring your ideas to
+              life!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Tech Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span> HTML5</span><br /></li>
+                <li><span> CSS3</span><br /></li>
+                <li><span>JavaScript</span><br /></li>
+                <li>
+                  <span>Responsive Web Design</span><br />
+                  
+                </li>
+                <li><span>React</span><br /></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>School of Science and Technology (SST)</span><br />
+                  Faculty of English Language
+                </li>
+                <li>
+                  <span
+                    >Instructed diverse students in English language skills,
+                    promoting active learning. </span
+                  ><br />
+                </li>
+                <li>
+                  <span
+                    >Implemented innovative teaching methods, improving language
+                    proficiency. </span
+                  ><br />
+                </li>
+                <li>
+                  <span
+                    >Developed dynamic lesson plans with multimedia resources
+                    for enhanced engagement.</span
+                  ><br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >Career Accelerator Program Prepleaf by Masai, Bengaluru
+                    July 23 - present</span
+                  ><br />
+                </li>
+                <li>
+                  <span>Bachelor of Commerce, Accounting</span><br />Soghra
+                  College Biharsharif, Nalanda Aug 10 - Aug 13
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------my projects------------->
+    <div id="project-sections">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-lists">
+          <div>
+            <h2>Meal-Finder</h2>
+
+            <a href="https://debounching.netlify.app/">
+              <img src="images/mealproject.avif" alt="" />
+            </a>
+          </div>
+          <div>
+            <h2>Ecommerce-website</h2>
+
+            <a href="https://nitishestore.netlify.app//">
+              <img src="images/ecommerce-2.avif" alt="" />
+            </a>
+          </div>
+          <div>
+            <h2>Search for Movies</h2>
+            <p>
+              <a href="https://omdbmovieappnk.netlify.app/">
+                <img src="images/moviecover2.avif" alt="" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------contact----------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>pqnitish2020@gmail.com</p>
+            <p> <i class="fa-solid fa-square-phone"></i>6200830563</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100090920653593"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com/pqnitish2020"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/nitish-kumar-869b12256/"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="https://github.com/pqnitish"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/myresume.pdf" download class="btn">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
